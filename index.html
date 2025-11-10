@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     body { font-family: Inter, sans-serif; background-color: #0b1020; color: #e8ecf8; margin: 0; }
     header { background-color: rgba(11, 16, 32, 0.8); backdrop-filter: blur(8px); position: sticky; top: 0; }
@@ -22,38 +23,38 @@
     .card { background-color: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 20px; margin-bottom: 20px; }
     .grid { display: grid; gap: 18px; }
     footer { border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0; text-align: center; color: #b6c3e8; }
+    .team-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; padding-top: 10px; }
+    .team-member { background-color: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 22px; width: 190px; text-align: center; color: #e8ecf8; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .team-photo { width: 130px; height: 130px; margin: 0 auto 14px; border-radius: 50%; overflow: hidden; border: 2px solid #e8ecf8; }
+    .team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
   </style>
 </head>
+
 <body>
   <header>
     <div class="container nav">
       <div class="brand">Endure and Survive</div>
       <nav>
         <ul>
-          <li><a href="#overview">Description</a></li>
+          <li><a href="#description">Description</a></li>
           <li><a href="#background">Background</a></li>
           <li><a href="#requirements">Requirements</a></li>
           <li><a href="#diagrams">Diagrams</a></li>
           <li><a href="#prototype">Prototype</a></li>
           <li><a href="#demo">Demo Video</a></li>
           <li><a href="#srs">SRS</a></li>
-          <li><a href="#bibliography">Bibliography</a></li>
           <li><a href="#team">Team</a></li>
+          <li><a href="#bibliography">Bibliography</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section id="overview">
+  <section id="description">
     <div class="container">
       <h2 class="section-title">Project Description</h2>
       <div class="card">
-        <p><strong>Endure and Survive</strong> is a 2D educational survival game designed to teach players essential wilderness skills through interactive gameplay. The game emphasizes exploration, resource management, and problem-solving in a dynamic environment. Players must gather materials, craft survival tools, and complete challenges across three distinct levels—each focused on a real-world survival skill.</p>
-        <ul>
-          <li><strong>Platform:</strong> Godot</li>
-          <li><strong>Audience:</strong> Middle school students and beginners interested in outdoor survival</li>
-          <li><strong>Development Tools:</strong> C# and custom-built physics and game logic</li>
-        </ul>
+        <p>Placeholder</p>
       </div>
     </div>
   </section>
@@ -62,8 +63,7 @@
     <div class="container">
       <h2 class="section-title">Background & Motivation</h2>
       <div class="card">
-        <p>The concept of <em>Endure and Survive</em> draws inspiration from the importance of teaching practical survival skills in an engaging and interactive way. Traditional lessons on wilderness safety can often feel abstract or disconnected. This project turns those concepts into hands-on learning experiences by gamifying them—allowing players to learn by doing.</p>
-        <p>Inspired by outdoor adventures and family traditions of camping and hiking, the team designed the game to capture the thrill and challenge of surviving in nature. The project also encourages teamwork and adaptability, key skills both in outdoor activities and in software development itself.</p>
+        <p>Placeholder</p>
       </div>
     </div>
   </section>
@@ -71,35 +71,131 @@
   <section id="requirements">
     <div class="container">
       <h2 class="section-title">Requirements</h2>
-      <div class="card">
-        <p>Placeholder</p>
-      </div>
+      <details class="card">
+        <summary><strong>View the Design Requirements (PDF)</strong></summary>
+        <div style="margin-top: 12px;">
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
+            <object
+              data="BHoule_Project_Requirements.pdf#toolbar=1&navpanes=0&scrollbar=1"
+              type="application/pdf"
+              style="position:absolute; inset:0; width:100%; height:100%; border: none;">
+              <p>
+                Your browser can’t display embedded PDFs.
+                <a href="BHoule_Project_Requirements.pdf" target="_blank" rel="noopener">Open the requirements PDF</a> instead.
+              </p>
+            </object>
+          </div>
+          <p style="margin-top:16px;">
+            <a href="BHoule_Project_Requirements.pdf" download
+               style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
+              ⬇ Download PDF
+            </a>
+          </p>
+        </div>
+      </details>
     </div>
   </section>
 
   <section id="diagrams">
     <div class="container">
       <h2 class="section-title">Design & Diagrams</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Original Project Description</h3>
-          <p>Placeholder</p>
+
+      <details class="card">
+        <summary><strong>View Use Case Diagram (PDF)</strong></summary>
+        <div style="margin-top: 12px;">
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
+            <object
+              data="BHoule_Use_Case_Diagram.pdf#toolbar=1&navpanes=0&scrollbar=1"
+              type="application/pdf"
+              style="position:absolute; inset:0; width:100%; height:100%; border:none;">
+              <p>
+                Your browser can’t display embedded PDFs.
+                <a href="BHoule_Use_Case_Diagram.pdf" target="_blank" rel="noopener">Open the Use Case Diagram</a> instead.
+              </p>
+            </object>
+          </div>
+          <p style="margin-top:16px;">
+            <a href="BHoule_Use_Case_Diagram.pdf" download
+               style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
+              ⬇ Download PDF
+            </a>
+          </p>
         </div>
-        <div class="card">
-          <h3>Use Case Diagram</h3>
+      </details>
+
+      <details class="card">
+        <summary><strong>View Fail/Retry Sequence Diagram (PDF)</strong></summary>
+        <div style="margin-top: 12px;">
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
+            <object
+              data="G5_SequenceDiagram_FailRetry.pdf#toolbar=1&navpanes=0&scrollbar=1"
+              type="application/pdf"
+              style="position:absolute; inset:0; width:100%; height:100%; border:none;">
+              <p>
+                Your browser can’t display embedded PDFs.
+                <a href="G5_SequenceDiagram_FailRetry.pdf" target="_blank" rel="noopener">Open the Fail/Retry Sequence Diagram</a> instead.
+              </p>
+            </object>
           </div>
-        <div class="card">
-          <h3>Class Diagram</h3>
+          <p style="margin-top:16px;">
+            <a href="G5_SequenceDiagram_FailRetry.pdf" download
+               style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
+              ⬇ Download PDF
+            </a>
+          </p>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary><strong>View Play/Complete Sequence Diagram (PDF)</strong></summary>
+        <div style="margin-top: 12px;">
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
+            <object
+              data="G5_SequenceDiagram_PlayComplete.pdf#toolbar=1&navpanes=0&scrollbar=1"
+              type="application/pdf"
+              style="position:absolute; inset:0; width:100%; height:100%; border:none;">
+              <p>
+                Your browser can’t display embedded PDFs.
+                <a href="G5_SequenceDiagram_PlayComplete.pdf" target="_blank" rel="noopener">Open the Play/Complete Sequence Diagram</a> instead.
+              </p>
+            </object>
           </div>
-        <div class="card">
-          <h3>Sequence Diagram</h3>
+          <p style="margin-top:16px;">
+            <a href="G5_SequenceDiagram_PlayComplete.pdf" download
+               style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
+              ⬇ Download PDF
+            </a>
+          </p>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary><strong>View State/Class Diagram (PDF)</strong></summary>
+        <div style="margin-top: 12px;">
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
+            <object
+              data="G5_StateDiagram.pdf#toolbar=1&navpanes=0&scrollbar=1"
+              type="application/pdf"
+              style="position:absolute; inset:0; width:100%; height:100%; border:none;">
+              <p>
+                Your browser can’t display embedded PDFs.
+                <a href="G5_StateDiagram.pdf" target="_blank" rel="noopener">Open the State/Class Diagram</a> instead.
+              </p>
+            </object>
           </div>
-      </div>
+          <p style="margin-top:16px;">
+            <a href="G5_StateDiagram.pdf" download
+               style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
+              ⬇ Download PDF
+            </a>
+          </p>
+        </div>
+      </details>
     </div>
   </section>
 
   <section id="prototype">
-     <div class="container">
+    <div class="container">
       <h2 class="section-title">Prototype</h2>
       <div class="card">
         <p>Placeholder</p>
@@ -107,8 +203,8 @@
     </div>
   </section>
 
-    <section id="demo">
-     <div class="container">
+  <section id="demo">
+    <div class="container">
       <h2 class="section-title">Demo Video</h2>
       <div class="card">
         <p>Placeholder</p>
@@ -116,8 +212,8 @@
     </div>
   </section>
 
-      <section id="srs">
-     <div class="container">
+  <section id="srs">
+    <div class="container">
       <h2 class="section-title">SRS</h2>
       <div class="card">
         <p>Placeholder</p>
@@ -128,42 +224,67 @@
   <section id="team">
     <div class="container">
       <h2 class="section-title">Team</h2>
-      <div class="grid">
-        <div class="card">
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="team-photo">
+            <img src="IMG_0046.jpg" alt="Cam Gagne">
+          </div>
           <h3>Cam Gagne</h3>
           <p><strong>Role:</strong> Software Engineer</p>
         </div>
-        <div class="card">
+
+        <div class="team-member">
+          <div class="team-photo">
+            <img src="placeholder.jpg" alt="Ben Houle">
+          </div>
           <h3>Ben Houle</h3>
           <p><strong>Role:</strong> Software Engineer</p>
         </div>
-        <div class="card">
+
+        <div class="team-member">
+          <div class="team-photo">
+            <img src="placeholder.jpg" alt="Brandon Maldonado">
+          </div>
           <h3>Brandon Maldonado</h3>
           <p><strong>Role:</strong> Software Engineer</p>
         </div>
-        <div class="card">
+
+        <div class="team-member">
+          <div class="team-photo">
+            <img src="placeholder.jpg" alt="Thomas McGeachie">
+          </div>
           <h3>Thomas McGeachie</h3>
           <p><strong>Role:</strong> Software Engineer</p>
         </div>
-        <div class="card">
+
+        <div class="team-member">
+          <div class="team-photo">
+            <img src="placeholder.jpg" alt="Gia Panchal">
+          </div>
           <h3>Gia Panchal</h3>
           <p><strong>Role:</strong> Software Engineer</p>
         </div>
       </div>
     </div>
   </section>
-  
-      <section id="bibliography">
-     <div class="container">
+
+  <section id="bibliography">
+    <div class="container">
       <h2 class="section-title">Bibliography</h2>
       <div class="card">
         <p>Placeholder</p>
       </div>
     </div>
+  </section>
 
   <footer>
-    <div class="container">© <span id="year"></span> Endure and Survive</div>
+    <div class="container">
+      © <span id="year"></span> Endure and Survive
+    </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
