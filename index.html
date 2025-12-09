@@ -27,6 +27,9 @@
     .team-member { background-color: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 22px; width: 190px; text-align: center; color: #e8ecf8; transition: transform 0.2s ease, box-shadow 0.2s ease; container-type: inline-size; }
     .team-photo { width: 130px; height: 130px; margin: 0 auto 14px; border-radius: 50%; overflow: hidden; border: 2px solid #e8ecf8; }
     .team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+    .btn { background-color: #ffffff; color: #0b1020; padding: 10px 16px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; }
+    .btn:hover { opacity: 0.95; }
+    .team-member p, .team-member a { overflow-wrap: anywhere; word-break: break-word; }
   </style>
 </head>
 
@@ -44,6 +47,7 @@
           <li><a href="#demo">Demo Video</a></li>
           <li><a href="#srs">SRS</a></li>
           <li><a href="#team">Team</a></li>
+          <li><a href="#slides">Slides</a></li>
           <li><a href="#bibliography">Bibliography</a></li>
         </ul>
       </nav>
@@ -55,6 +59,33 @@
       <h2 class="section-title">Project Description</h2>
       <div class="card">
         <p>Endure and Survive is an educational survival game that teaches players real-world outdoor skills in a fun, interactive way. Designed for middle-school aged kids, the game encourages problem solving and creativity with activities and puzzles relating to real world survival skills such as fire making and navigation. The game teaches presents each of these challenges through a series of levels, each with an objective tailored to a specific real world skill.</p>
+      </div>
+      <div class="card feature-grid" style="padding-top:8px;">
+        <div style="display:flex; gap:18px; flex-wrap:wrap; justify-content:center; align-items:start;">
+          <div style="width:300px; text-align:center;">
+            <div style="border-radius:12px; overflow:hidden; background:#000;">
+              <img src="fire.jpg" alt="Fire skill" style="width:100%; height:180px; object-fit:cover; display:block;">
+            </div>
+            <h4 style="margin:10px 0 6px;">Fire Making</h4>
+            <p style="margin:0; color:#b6c3e8;">Learn safe fire-making techniques.</p>
+          </div>
+
+          <div style="width:300px; text-align:center;">
+            <div style="border-radius:12px; overflow:hidden; background:#000;">
+              <img src="shelter.jpg" alt="Shelter building" style="width:100%; height:180px; object-fit:cover; display:block;">
+            </div>
+            <h4 style="margin:10px 0 6px;">Shelter</h4>
+            <p style="margin:0; color:#b6c3e8;">Practice constructing shelter to stay safe from the elements.</p>
+          </div>
+
+          <div style="width:300px; text-align:center;">
+            <div style="border-radius:12px; overflow:hidden; background:#000;">
+              <img src="compass.jpg" alt="Navigation / compass" style="width:100%; height:180px; object-fit:cover; display:block;">
+            </div>
+            <h4 style="margin:10px 0 6px;">Navigation</h4>
+            <p style="margin:0; color:#b6c3e8;">Use map and compass skills to find your way in-game.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -76,17 +107,17 @@
         <div style="margin-top: 12px;">
           <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
             <object
-              data="BHoule_Project_Requirements.pdf#toolbar=1&navpanes=0&scrollbar=1"
+              data="updatedRequirements.pdf#toolbar=1&navpanes=0&scrollbar=1"
               type="application/pdf"
               style="position:absolute; inset:0; width:100%; height:100%; border: none;">
               <p>
-                Your browser can’t display embedded PDFs.
-                <a href="BHoule_Project_Requirements.pdf" target="_blank" rel="noopener">Open the requirements PDF</a> instead.
+                Your browser can't display embedded PDFs.
+                <a href="updatedRequirements.pdf" target="_blank" rel="noopener">Open the requirements PDF</a> instead.
               </p>
             </object>
           </div>
           <p style="margin-top:16px;">
-            <a href="BHoule_Project_Requirements.pdf" download
+            <a href="updatedRequirements.pdf" download
                style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
               ⬇ Download PDF
             </a>
@@ -98,95 +129,78 @@
 
   <section id="diagrams">
     <div class="container">
-      <h2 class="section-title">Design & Diagrams</h2>
+      <h2 class="section-title">Diagrams</h2>
 
       <details class="card">
-        <summary><strong>View Use Case Diagram (PDF)</strong></summary>
+        <summary><strong>View Use Case Diagram</strong></summary>
         <div style="margin-top: 12px;">
           <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
-            <object
-              data="BHoule_Use_Case_Diagram.pdf#toolbar=1&navpanes=0&scrollbar=1"
-              type="application/pdf"
-              style="position:absolute; inset:0; width:100%; height:100%; border:none;">
-              <p>
-                Your browser can’t display embedded PDFs.
-                <a href="BHoule_Use_Case_Diagram.pdf" target="_blank" rel="noopener">Open the Use Case Diagram</a> instead.
-              </p>
-            </object>
+            <img src="updatedUseCase.png" alt="Use Case Diagram" style="width:100%; height:100%; object-fit:contain; display:block;">
           </div>
           <p style="margin-top:16px;">
-            <a href="BHoule_Use_Case_Diagram.pdf" download
+            <a href="updatedUseCase.png" download
                style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
-              ⬇ Download PDF
+              ⬇ Download Image
             </a>
           </p>
         </div>
       </details>
 
       <details class="card">
-        <summary><strong>View Fail/Retry Sequence Diagram (PDF)</strong></summary>
+        <summary><strong>View Fail/Retry Sequence Diagram</strong></summary>
         <div style="margin-top: 12px;">
           <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
-            <object
-              data="G5_SequenceDiagram_FailRetry.pdf#toolbar=1&navpanes=0&scrollbar=1"
-              type="application/pdf"
-              style="position:absolute; inset:0; width:100%; height:100%; border:none;">
-              <p>
-                Your browser can’t display embedded PDFs.
-                <a href="G5_SequenceDiagram_FailRetry.pdf" target="_blank" rel="noopener">Open the Fail/Retry Sequence Diagram</a> instead.
-              </p>
-            </object>
+            <img src="FailretryUpdate.png" alt="Fail/Retry Sequence Diagram" style="width:100%; height:100%; object-fit:contain; display:block;">
           </div>
           <p style="margin-top:16px;">
-            <a href="G5_SequenceDiagram_FailRetry.pdf" download
+            <a href="FailretryUpdate.png" download
                style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
-              ⬇ Download PDF
+              ⬇ Download Image
             </a>
           </p>
         </div>
       </details>
 
       <details class="card">
-        <summary><strong>View Play/Complete Sequence Diagram (PDF)</strong></summary>
+        <summary><strong>View Play/Complete Sequence Diagram</strong></summary>
         <div style="margin-top: 12px;">
           <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
-            <object
-              data="G5_SequenceDiagram_PlayComplete.pdf#toolbar=1&navpanes=0&scrollbar=1"
-              type="application/pdf"
-              style="position:absolute; inset:0; width:100%; height:100%; border:none;">
-              <p>
-                Your browser can’t display embedded PDFs.
-                <a href="G5_SequenceDiagram_PlayComplete.pdf" target="_blank" rel="noopener">Open the Play/Complete Sequence Diagram</a> instead.
-              </p>
-            </object>
+            <img src="playcompleteupdated.png" alt="Play/Complete Sequence Diagram" style="width:100%; height:100%; object-fit:contain; display:block;">
           </div>
           <p style="margin-top:16px;">
-            <a href="G5_SequenceDiagram_PlayComplete.pdf" download
+            <a href="playcompleteupdated.png" download
                style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
-              ⬇ Download PDF
+              ⬇ Download Image
             </a>
           </p>
         </div>
       </details>
 
       <details class="card">
-        <summary><strong>View State/Class Diagram (PDF)</strong></summary>
+        <summary><strong>View State Diagram</strong></summary>
         <div style="margin-top: 12px;">
           <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
-            <object
-              data="G5_StateDiagram.pdf#toolbar=1&navpanes=0&scrollbar=1"
-              type="application/pdf"
-              style="position:absolute; inset:0; width:100%; height:100%; border:none;">
-              <p>
-                Your browser can’t display embedded PDFs.
-                <a href="G5_StateDiagram.pdf" target="_blank" rel="noopener">Open the State/Class Diagram</a> instead.
-              </p>
-            </object>
+            <img src="updatedState.png" alt="State Diagram" style="width:100%; height:100%; object-fit:contain; display:block;">
           </div>
           <p style="margin-top:16px;">
-            <a href="G5_StateDiagram.pdf" download
+            <a href="updatedState.png" download
                style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
-              ⬇ Download PDF
+              ⬇ Download Image
+            </a>
+          </p>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary><strong>View Class Diagram</strong></summary>
+        <div style="margin-top: 12px;">
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
+            <img src="ClassDiagramUpdated.png" alt="Class Diagram" style="width:100%; height:100%; object-fit:contain; display:block;">
+          </div>
+          <p style="margin-top:16px;">
+            <a href="ClassDiagramUpdated.png" download
+               style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
+              ⬇ Download Image
             </a>
           </p>
         </div>
@@ -198,7 +212,7 @@
     <div class="container">
       <h2 class="section-title">Prototype</h2>
       <div class="card">
-        <p><a href="https://benhoule.github.io/" target = "_blank" style="color: white; text-decoration: none;"> <strong>Play Version 1 Here!</strong></a></p>
+        <p><a class="btn" href="https://benhoule.github.io/" target="_blank" rel="noopener">Play Version Prototype Here!</a></p>
       </div>
     </div>
   </section>
@@ -207,19 +221,72 @@
     <div class="container">
       <h2 class="section-title">Demo Video</h2>
       <div class="card">
-        <p>Placeholder</p>
-        <p>Presentation notes and slides also will be added here.</p>
+        <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 70vh;">
+          <video controls style="width:100%; height:100%; display:block; border-radius:12px; background:#000;">
+            <source src="Endure_and_survive_demo.mp4" type="video/mp4">
+            <source src="Endure and survive demo video.mov" type="video/quicktime">
+            Your browser doesn't support embedded videos.
+          </video>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="srs">
     <div class="container">
-      <h2 class="section-title">SRS</h2>
-      <div class="card">
-        <p>Placeholder</p>
-      </div>
+      <h2 class="section-title">Software Requirements Specification (SRS)</h2>
+      <details class="card">
+        <summary><strong>View the SRS Document (PDF)</strong></summary>
+        <div style="margin-top: 12px;">
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
+            <object
+              data="Group5SRSv2.pdf#toolbar=1&navpanes=0&scrollbar=1"
+              type="application/pdf"
+              style="position:absolute; inset:0; width:100%; height:100%; border:none;">
+              <p>
+                Your browser can’t display embedded PDFs.
+                <a href="Group5SRSv2.pdf" target="_blank" rel="noopener">Open the SRS Document</a> instead.
+              </p>
+            </object>
+          </div>
+          <p style="margin-top:16px;">
+            <a href="Group5SRSv2.pdf" download
+               style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
+              ⬇ Download PDF
+            </a>
+          </p>
+        </div>
+      </details>
     </div>
+  </section>
+
+  <section id="slides">
+    <div class="container">
+      <h2 class="section-title">Presentation Slides</h2>
+      <details class="card">
+        <summary><strong>View the Presentation Slides (PDF)</strong></summary>
+        <div style="margin-top: 12px;">
+          <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 80vh;">
+            <object
+              data="Survive & Endure - Final Presentation.pdf#toolbar=1&navpanes=0&scrollbar=1"
+              type="application/pdf"
+              style="position:absolute; inset:0; width:100%; height:100%; border:none;">
+              <p>
+                Your browser can’t display embedded PDFs.
+                <a href="Survive & Endure - Final Presentation.pdf" target="_blank" rel="noopener">Open the Presentation Slides</a> instead.
+              </p>
+            </object>
+          </div>
+          <p style="margin-top:16px;">
+            <a href="Survive & Endure - Final Presentation.pdf" download
+               style="background-color:white; color:#0b1020; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">
+              ⬇ Download PDF
+            </a>
+          </p>
+        </div>
+      </details>
+    </div>
+    
   </section>
 
   <section id="team">
@@ -264,13 +331,13 @@
           <p>ThomasCMcG@gmail.com</p>
         </div>
 
-        <div class="team-member">
+          <div class="team-member">
           <div class="team-photo">
             <img src="GiaPanchal.JPG" alt="Gia Panchal">
           </div>
           <h3>Gia Panchal</h3>
           <p><strong>Role:</strong> Software Engineer</p>
-	  <p>Jiya_panchal@student.uml.edu</p>
+	  <p><a href="mailto:Jiya_panchal@student.uml.edu" style="color: #e8ecf8; text-decoration: none;">Jiya_panchal@student.uml.edu</a></p>
           <p> <a href="https://www.linkedin.com/in/jiyapanchal" target="_blank" style="color: white; text-decoration: none;"> <strong>LinkedIn</strong></a></p>
 	</div>
       </div>
@@ -281,8 +348,20 @@
     <div class="container">
       <h2 class="section-title">Bibliography</h2>
       <div class="card">
-        <p>Godot Game Engine Used for Development: <a href="https://godotengine.org/" target="_blank" style="color: white; text-decoration: none;"> <strong>Link</strong></a></p>
-        <p>Draw.io Software Used to Create Diagrams: <a href="https://www.drawio.com/" target="_blank" style="color: white; text-decoration: none;"> <strong>Link</strong></a></p>
+        <p><strong>Tools Used</strong></p>
+        <p>Photopea — Online image editing: <a href="https://www.photopea.com/" target="_blank" rel="noopener" style="color: white; text-decoration: none;"><strong>https://www.photopea.com/</strong></a></p>
+        <p>Draw.io / diagrams.net — UML diagrams: <a href="https://app.diagrams.net/" target="_blank" rel="noopener" style="color: white; text-decoration: none;"><strong>https://app.diagrams.net/</strong></a></p>
+        <p>Godot Engine — Game engine (License): <a href="https://godotengine.org/license/" target="_blank" rel="noopener" style="color: white; text-decoration: none;"><strong>https://godotengine.org/license/</strong></a></p>
+
+        <p><strong>Fonts</strong></p>
+        <p>Minecraft font from DaFont: <a href="https://www.dafont.com/minecraft.font" target="_blank" rel="noopener" style="color: white; text-decoration: none;"><strong>https://www.dafont.com/minecraft.font</strong></a></p>
+
+        <p><strong>Game Graphics</strong></p>
+        <p>Tiny 16 Basic Game Asset Pack — OpenGameArt: <a href="https://opengameart.org/content/tiny-16-basic-game" target="_blank" rel="noopener" style="color: white; text-decoration: none;"><strong>https://opengameart.org/content/tiny-16-basic-game</strong></a><br>
+        Attribution: Lanea Zimmerman. The anti-DRM clause of CC-BY 3.0 is waived.</p>
+
+        <p>Pixel Art Wood — itch.io: <a href="https://frostwindz.itch.io/pixel-art-wood" target="_blank" rel="noopener" style="color: white; text-decoration: none;"><strong>https://frostwindz.itch.io/pixel-art-wood</strong></a><br>
+        Attribution: Frostwindz.</p>
       </div>
     </div>
   </section>
